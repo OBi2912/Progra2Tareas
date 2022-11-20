@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraP2.MainPage">
+    <StackLayout BackgroundColor="Black" Padding="40,90,40,80" Margin="05,05,05,05">
+        <!--OBi Medina -->
+   
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+
+
+        <Label x:Name="txtResultado" HorizontalOptions="End" TextColor= "DarkOrange" Text="0" FontSize="80" Grid.ColumnSpan="4"  Grid.Column="0" Grid.Row="0" />
+
+            <Button BorderRadius="10" TextColor= "DarkOrange"  FontSize="30" Clicked="clicClearError" Text="CE" Grid.Column="0" Grid.Row="1"/>
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="16" Clicked="clicDELETE" Text="DELETE" Grid.Column="1" Grid.Row="1" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="50" Clicked="clicPct" Text="%" Grid.Column="2" Grid.Row="1" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="40" Clicked="clicPor" Text="x" Grid.Column="3" Grid.Row="1" />
+
+
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="7" Grid.Column="0" Grid.Row="2"/>
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="8" Grid.Column="1" Grid.Row="2" />
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="9" Grid.Column="2" Grid.Row="2" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="50"  Clicked="clicSuma" Text="+" Grid.Column="3" Grid.Row="2" />
+
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="4" Grid.Column="0" Grid.Row="3"/>
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="5" Grid.Column="1" Grid.Row="3" />
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="6" Grid.Column="2" Grid.Row="3" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="60" Clicked="ClicResta" Text="-" Grid.Column="3" Grid.Row="3" />
+
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="1" Grid.Column="0" Grid.Row="4"/>
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="2" Grid.Column="1" Grid.Row="4" />
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="3" Grid.Column="2" Grid.Row="4" />
+            <Button BorderRadius="10" Clicked="clicDividir" FontSize="50" TextColor= "DarkOrange" Text="÷" Grid.Column="3" Grid.Row="4" />
+
+            <Button BorderRadius="10" Clicked="clicNumero" FontSize="50" Text="0" Grid.Column="0" Grid.Row="5"/>
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="50" Clicked="clicNumero" Text="." Grid.Column="1" Grid.Row="5" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="50" Clicked="clicIgual" Text="=" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" />
+            <Button BorderRadius="10" TextColor= "DarkOrange" FontSize="50" Clicked="clicIgual" Text="=" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" />
+           
+        </Grid>
+    </StackLayout>
+    <!--OBi Medina -->
+
+</ContentPage>

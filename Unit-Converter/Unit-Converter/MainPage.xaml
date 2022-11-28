@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unit_Converter.MainPage">
+
+
+    <StackLayout BackgroundColor="LightSlateGray" Padding="40,90,40,80" Margin="05,05,05,05">
+        <Label TextColor="Black" Text="Convertidor de Medidas" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" FontSize="33"/>
+        <Label Text=""/>
+        <Label Text=""/>
+        <Label Text=""/>
+        <Label Text=""/>
+        <Label Text=""/>
+       
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" FontSize="25" TextColor="Black" Text="De:" />
+            <Editor x:Name="EDT_De" Grid.Row="0" Grid.Column="1" Keyboard="Numeric" TextColor="Black" Text ="1" TextChanged="EDT_De_TextChanged"/>
+            <Picker x:Name="PIC_ComboDe" Grid.Row="1" Grid.Column="1" SelectedIndexChanged="PIC_Combos_SelectedIndexChanged"/>
+            <Label Text=" " Grid.Row="2"/>
+            <Label Grid.Row="3" Grid.Column="0" FontSize="25" TextColor="Black" Text="A:" />
+            <Editor x:Name="EDT_A" Grid.Row="3" Grid.Column="1" Keyboard="Numeric" IsEnabled="False"/>
+            <Picker x:Name="PIC_ComboA" Grid.Row="4" Grid.Column="1" SelectedIndexChanged="PIC_Combos_SelectedIndexChanged" />
+        </Grid>
+        <Label VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontSize="25" Text="OBi Medina" TextColor="Black"></Label>
+
+    </StackLayout>
+
+</ContentPage>
